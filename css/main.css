@@ -1,0 +1,433 @@
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
+</style>
+
+*{
+    margin: 0;
+    padding: 0;
+    
+}
+body{
+    font-family: 'Oswald', sans-serif;
+    font-weight: 400;
+    color: #f0f0f0;
+    
+    margin: 0;
+    min-height: 100vh;
+    background: linear-gradient(90deg, rgba(0, 0, 0, 1) 0%, #9e57c7 50%, rgba(0, 0, 0, 1) 100%);
+    font-size: 16px;
+    background: #000000;
+}
+a{
+    text-decoration: none;
+    color: #451b57;
+}
+img{
+    max-width: 37%;
+    height: auto;
+}
+
+.wrapper{
+   background: #000000;
+background: linear-gradient(90deg, rgba(0, 0, 0, 1) 0%, #9e57c7 50%, rgba(0, 0, 0, 1) 100%);
+width: 100%;
+}
+.container{
+    width: 1400px;
+    margin: 0 auto;
+    padding: 20px;
+}
+header{
+    padding: 50px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+header .logo{
+    text-transform: uppercase;
+    font-size: 29px;
+    font-weight: 800;
+    color: #f0f0f0;
+}
+header nav{
+    float: right;
+    width: 50%;
+}
+header nav ul{
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+}
+header nav ul li{
+    display: inline-block;
+    }
+header nav ul li a{
+    color: #f0f0f0;
+    }
+    header nav ul li.active::after{
+        content: "";
+        display: block;
+        width: 40px;
+        height: 5px;
+        background-color: #291734;
+       border-radius: 10px;
+    }
+    header nav ul li:not(.btn):not(.active) a:hover{
+      border-bottom: 5px solid #291734;  
+    }
+header nav ul li.btn a {
+    background-color: #9b59c4;
+    padding: 9px 17px;
+    border-radius:5px ;
+    transition: all 500ms ease;
+}
+ header nav ul li.btn a:hover {
+ background-color: #cf93f0;
+ }
+ .hero{
+    padding-bottom: 100px;
+    position: relative;
+    }
+  .hero--info{
+    width: 530px;
+    padding-top: 70px; 
+    }
+    .hero--info h1{
+        font-size: 50px;
+        font-weight: 600;
+    } 
+    .hero--info p{
+        margin-top: 30px;
+        line-height: 170%;
+        font-weight: 500;
+    }
+    .hero img{
+        position: absolute;
+        top: 35px;
+        right: 70px;
+         }
+ .icon {
+    width: 20px;
+    height: 20px;
+    vertical-align: middle;
+    margin-right: 5px;
+}     
+.tech-icon {
+    width: 650px;
+    height: 200px;
+    object-fit: contain;
+} 
+.trending{
+    padding-top: 50px;
+} 
+.trending h3{
+    font-size: 31px;
+    font-weight: 600;
+    padding: 5px 50px;
+    
+}
+.trending .see-all{
+    color: #f0f0f0;
+    background: #9b59c4;
+    border-radius: 5px;
+    padding: 12px 23px;
+    margin-right: 20px;
+    display: block;
+    float: right;
+    transition: all 500ms ease;
+    
+}
+.trending .see-all:hover{
+   transform: scale(1.1);
+}
+.trending .cards{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 50px 0;
+}
+.trending .cards span{
+    display: block;
+    text-align: center;
+    margin-top: 20px;
+}
+.block {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.trending .cards span img{
+    position: relative;
+    top: 5px;
+    margin-right: 7px;
+}
+.banner{
+    padding: 80px 0;
+}
+.banner h3{
+    font-size: 30px;
+    font-weight: 600;
+    margin-bottom: 30px;
+}
+.banner p{
+    line-height: 170%;
+    width: 1200px;
+    margin-bottom: 30px;
+}
+.banner img{
+   
+    width: 90vw;   
+    max-width: none;
+    height: 600px;
+    margin-bottom: 30px;
+}
+.email{
+    padding-bottom: 120px; 
+}
+.email h3{
+    margin-top: 60px;
+    font-size: 30px;
+    
+}
+.email .block{
+    background: #291f2f;
+    margin-top: 30px;
+    border-radius: 10px;
+    padding: 20px 3%;
+    width: 94%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+      text-align: left;
+}
+.email .block h4{
+    font-size: 30px;
+    font-weight: 500;
+    text-align: left;
+   
+}
+.email .block p{
+   width: 500px;
+   text-align: left;
+}
+.email .block input{
+   background: #f0f0f0;
+   outline: none;
+    border: 0;
+    border-radius: 5px;
+    width: 380px;
+    font-family: 'Oswald', sans-serif;
+    font-weight: 400;
+    padding: 20px 30px;
+    padding-right: 120px;
+
+}
+.email .block button {
+  background-color: #9b59c4;
+  padding: 13px 17px;
+  border-radius: 5px;
+  transition: all 500ms ease;
+  color: #f0f0f0;
+  cursor: pointer;
+   border: 0;
+   
+}
+
+.email .block button:hover {
+  background-color: #cf93f0;
+}
+.hero-about .info{
+    position: relative;
+}
+.hero-about .info{
+    width: 500px;
+    padding: 50px 0;
+}
+.hero-about .info h1{
+    margin-bottom: 15px;
+    font-size: 30px;
+    
+}
+.hero-about .info .btn{
+    background-color: #9b59c4;
+    padding: 13px 17px;
+    border-radius: 5px;
+    transition: all 500ms ease;
+    color: #f0f0f0;
+    border: 0;
+}
+.hero-about .info .btn:hover{
+    
+    cursor: pointer;
+    transform: scale(1.1);
+}
+.hero-about .info .btn{
+    margin-bottom: 20px;
+}.hero-about img{
+    position: absolute;
+    top: 100px;
+    right: 110px;
+     width: 500px;
+}
+.work{
+    padding: 80px 0;
+}
+.work h2{
+    font-size: 25px;
+    margin-bottom: 40px;
+}
+.work .blocks{
+    display: flex;
+    justify-content: space-between;
+}
+.work .blocks .block{
+    background: #291f2f;
+    padding: 50px 35px;
+    border-radius: 10px;
+    width: 25%;
+}
+.work .blocks .block h3{
+    font-size: 20px;
+    margin:20px 0;
+}
+.work .blocks .block .badge{
+    padding: 10px 20px;
+    border-radius: 7px;
+}
+.work .blocks .block .badge.darkblue{
+    background: #1800a1;
+    color: #f0f0f0;
+}
+.work .blocks .block .badge.purple{
+    background: #8520c4;
+    color: #f0f0f0;
+}
+.work .blocks .block .badge.pink{
+    background: #df00e3;
+    color: #f0f0f0;
+}
+.hero-contacts h1{
+    text-align: center;
+    margin-bottom: 30px;
+    margin-top: 70px;
+    font-size: 30px;
+    margin-top: -5px;
+}
+.hero-contacts p{
+    text-align: center;
+    
+}
+.hero-contacts img{
+    margin:80px 15% ; 
+    max-width: none;
+    width: 1200px;
+    height: 510px;
+     margin-top: -10px;
+     margin-left: 100px;
+    
+}
+ .feedback{   
+    padding: 70px 0;
+    background: #19111e;
+}
+.feedback h2{
+    text-align: center;
+    font-weight: 500;
+    font-size: 30px;
+}
+.feedback p{
+    text-align: center;
+    margin-top: 10px;
+}
+.feedback form{
+    margin: 80px auto;
+    width: 600px;
+}
+.feedback form .inline{
+  display: flex; 
+    justify-content: space-between; 
+}
+.feedback form .inline > div{   
+    width: 50%; 
+}    
+.feedback form label{
+    color: #a082b1;
+    font-size:14px ;
+}
+.feedback form input, .feedback form textarea{
+    background: #4e3b59;
+    border-radius: 10px;
+    border: 0.6px solid #765b86;
+    display:block;
+    width: 90%;
+    padding: 15px 10px;
+    outline: none;
+    color: #f0f0f0;
+    margin-top: 7px;
+    margin-bottom: 20px ;
+}
+.feedback form .one-line  {
+    width: 96% ;
+}
+.feedback form textarea{
+    resize: none;
+    height: 200px;
+}
+.feedback form button{
+  background: #9b59c4; 
+  border-radius: 5px; 
+  border: 0;
+  float: right;
+  cursor: pointer;
+  color: #f0f0f0;
+  padding: 15px 35px;
+  transition: all 500ms ease;
+}
+.feedback form button:hover{
+    background:#291734;
+}
+
+    footer{
+    background: #000000;
+    padding: 50px 0;
+    
+}
+footer .blocks{
+    display: flex;
+    justify-content: space-between;
+    
+}
+footer .blocks .logo{
+    text-transform: uppercase;
+    font-size: 29px;
+    font-weight: 800;
+    color: #f0f0f0;
+}
+footer .blocks p{
+    width: 300px;
+    margin: 15px 0;
+}
+footer .blocks h4{
+    font-weight: 500;
+    font-size: 17px;
+   
+}
+footer .blocks ul{
+    list-style: none;
+    
+}
+footer .blocks ul li{
+    margin-top: 7px;
+    opacity: 0.8;
+}
+footer hr{
+    margin: 30px 0;
+    border: 0;
+    height: 0.6px;
+    background: #afafaf;
+    opacity: 0.5;
+}
+footer > p{
+    text-align: center;
+    
+}
